@@ -9,4 +9,4 @@ app.use(express.json())
 app.use(routes)
 
 
-app.listen(3000, () => console.log("Listenning on 3000"))
+app.listen(4000, () => console.log("Listenning on 4000"))
