@@ -14,7 +14,7 @@ export default function Register() {
   const [city, setCity] = useState("");
   const [uf, setUf] = useState("");
 
-  async function handleRegister(e){
+  async function handleRegister(e) {
     e.preventDefault();
 
     const data = {
@@ -31,6 +31,7 @@ export default function Register() {
 
       history.push('/')
     } catch (error) {
+      console.error(error)
       alert('Erro no cadastro tente novamente mais tarde!')
     }
   }
@@ -46,7 +47,7 @@ export default function Register() {
 
           <Link className="back-link" to="/">
             <FiArrowLeft size={16} color="E02041" />
-            Não tenho cadastro
+            Voltar para login
           </Link>
         </section>
 
